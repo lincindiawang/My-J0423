@@ -2,9 +2,11 @@ package Javaa;
 
 public class Score {
 
+	public static final Score value = null;
+
 	public static void main(String[] args) {
 		int value ;
-		public Scoreee(String s ) throws ScoreeeFormatException{
+		public Score (String a)throws ScoreeeFormatException{
 			try {
 				value = Integer.parseInt(a);
 			}
