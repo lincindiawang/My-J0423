@@ -5,29 +5,21 @@ import java.util.Scanner;
 public class ScoreT {
 
 	public static void main(String[] args) {
-		int maths = 0;
-		int englishs = 0;
-		int averages = 0;
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		try {
 			System.out.print("Please enter the Math score:");
-		    maths = Integer.parseInt(scanner.nextLine());
+		    Score maths = new Score();
 		    System.out.print("Please enter English score:");
-		    englishs = Integer.parseInt(scanner.nextLine());
+		    Score englishs =  new Score();
 		    
-		    averages = (maths + englishs)/2;
-		    System.out.println("The total average is" + averages);
+		    
+		    System.out.println("The total average is:" + (maths.value + englishs.value)/2);
 		}
-		catch(ArithmeticException e) {
+		catch(ScoreeeFormatException e) {
+			e.printStackTrace();
 			
-			System.out.print("The number of metic is wrong");
-			
-		}
-		
-		catch(Exception e) {
-			
-			System.out.print("Wrong type of number");
 		}
 		
 		
