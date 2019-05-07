@@ -15,6 +15,7 @@ public class Pizza {
 		    
 		    if(piece == 0 ){
 		    	System.out.println("你確定不要切？");
+		    	break;
 		    }
 		    
 		    else if (piece>=1 && piece<=7 || piece>=9 && piece<=11 || piece>=13 && piece<=15) {
