@@ -15,9 +15,9 @@ public class ScoreT {
 		    Score englishs =  new Score();
 		    
 		    
-		    System.out.println("The total average is:" + (maths.value + englishs.value)/2);
+		    //System.out.println("The total average is:" + (maths.value + englishs.value)/2);
 		}
-		catch(ScoreeeFormatException e) {
+		catch(Exception e) {
 			e.printStackTrace();
 			
 		}
